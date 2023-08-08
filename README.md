@@ -15,16 +15,15 @@
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+    - [Tech Stack](### Tech Stack)
+    - [Key Features](### Key Features )
+  - [🚀 Live Demo](## 🚀 Live Demo )
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
+  - [Usage](### Usage)
+  - [Run tests](### Run tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -103,8 +102,8 @@ https://github.com/Dorcas126/capstone-project-metrics-webapp.git
 
 Install this project with:
 
-Github
-Vs code 
+- Github
+- Vs code 
 to be able to access the code
 
 ### Usage
@@ -118,7 +117,8 @@ git commands
 
 To run tests, run the following command:
 
-Linters
+- Linters
+- npm run test
 
 <!-- AUTHORS -->
 
@@ -147,6 +147,17 @@ Feel free to check the [issues page](../../issues/).
 
 - **[Add functionality using JS]**
 - **[Add Boostrap to my html file]**
+
+<!-- Acknowledgments -->
+
+### Acknowledgments
+
+- Thank you to Nelson Sakwa, the author of the original design of this site :original design
+- Microverse
+- Financial Modeling Prep API Documentation
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 
 <!-- SUPPORT -->
