@@ -53,19 +53,19 @@ input {
 }
 
 .productCard:nth-child(2n) {
-  background-color: hsla(317, 81%, 50%, 0.76);
+  background-color: hsla(337, 81%, 50%, 0.76);
 }
 
 .productCard:nth-child(3n) {
-  background-color: rgba(145, 11, 11, 0.6);
+  background-color: hsla(337, 81%, 50%, 0.76);
 }
 
 .productCard:nth-child(4n) {
-  background-color: hsla(0, 81%, 50%, 0.76);
+  background-color: hsla(337, 81%, 50%, 0.76);
 }
 
 .productCard:nth-child(5n) {
-  background-color: hsla(332, 81%, 50%, 0.76);
+  background-color: hsla(337, 81%, 50%, 0.76);
 }
 
 .productTitle {
