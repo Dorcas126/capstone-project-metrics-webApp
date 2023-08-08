@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,19 +13,22 @@ const ProductDetail = () => {
   const { productid } = useParams();
   const dispatch = useDispatch();
 
-  const fetchProductDetail = async () => {
+  const fetchProductDetail = useCallback(async () => {
     const response = await axios.get(`https://fakestoreapi.com/products/${productid}`).catch((err) => {
-      console.log('Err', err);
+      throw new Error('Err', err);
     });
     dispatch(selectedProduct(response.data));
-  };
+  }, [productid, dispatch]);
 
   useEffect(() => {
-    if (productid && productid !== '') fetchProductDetail();
+    if (productid && productid !== '') {
+      fetchProductDetail();
+    }
+
     return () => {
       dispatch(removeSelectedProduct());
     };
-  }, [productid]);
+  }, [productid, fetchProductDetail, dispatch]); // Include dispatch in the dependency array
 
   return (
     <div className="DetailsPage">
