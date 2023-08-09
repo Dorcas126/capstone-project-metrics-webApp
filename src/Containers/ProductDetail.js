@@ -2,7 +2,10 @@ import React, { useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectedProduct, removeSelectedProduct } from '../Redux/Actions/productActions';
+import {
+  selectedProduct,
+  removeSelectedProduct,
+} from '../Redux/Actions/productActions';
 import '../Styles/ProductDetail.css';
 
 const ProductDetail = () => {
@@ -14,9 +17,11 @@ const ProductDetail = () => {
   const dispatch = useDispatch();
 
   const fetchProductDetail = useCallback(async () => {
-    const response = await axios.get(`https://fakestoreapi.com/products/${productid}`).catch((err) => {
-      throw new Error('Err', err);
-    });
+    const response = await axios
+      .get(`https://fakestoreapi.com/products/${productid}`)
+      .catch((err) => {
+        throw new Error('Err', err);
+      });
     dispatch(selectedProduct(response.data));
   }, [productid, dispatch]);
 
@@ -33,39 +38,41 @@ const ProductDetail = () => {
   return (
     <div className="DetailsPage">
       {Object.keys(product).length === 0 ? (
-        <div><h3>...loading</h3></div>
+        <div>
+          <h3>...loading</h3>
+        </div>
       ) : (
         <>
           <div className="Home-header">
             <div className="image">
               <img className="image" src={image} alt={title} />
             </div>
-            <h2>
-              {title}
-            </h2>
+            <h2>{title}</h2>
           </div>
           <div className="productDetail">
-            <div className="productDescription">
+            <div className="productDescriptions">
               <div className="productDescription">
-                Category:
-                {category}
+                <div>Category:</div>
+                <div>{category}</div>
               </div>
               <div className="productDescription">
                 Product Description:
                 {description}
               </div>
               <div className="productDescription">
-                Price:
-                $
-                {price}
+                <div>Price: </div>
+                <div>
+                  $
+                  {price}
+                </div>
               </div>
               <div className="productDescription">
-                Count:
-                {rating.count}
+                <div>Count:</div>
+                <div>{rating.count}</div>
               </div>
               <div className="productDescription">
-                Rating:
-                {rating.rate}
+                <div>Rating:</div>
+                <div>{rating.rate}</div>
               </div>
             </div>
           </div>

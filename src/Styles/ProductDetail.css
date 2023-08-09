@@ -3,6 +3,7 @@
   min-height: 100vh;
   flex-direction: column;
   background-color: #ec4c8a;
+  justify-content: space-between;
 }
 
 .image {
@@ -10,16 +11,22 @@
   border-radius: 5px;
 }
 
+.productDescription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .productDescription:nth-child(odd) {
   color: white;
   font-weight: bold;
   padding: 1rem 25px;
-  background-color: rgb(210,67,121);
+  background-color: rgb(210, 67, 121);
 }
 
 .productDescription:nth-child(even) {
   color: white;
   font-weight: bold;
   padding: 1rem 25px;
-  background-color: rgb(248,79,144);
+  background-color: rgb(248, 79, 144);
 }
