@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #ec4c8a;
+  color: white;
+  border-style: none;
+  font-size: 1.5rem;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #ec4c8a;
+  color: white;
+}

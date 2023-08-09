@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(347, 96%, 26%, 1);
+  color: white;
+  padding: 1rem;
+}
+
+.Home-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(337, 81%, 50%, 0.76);
+  padding: 0.5rem;
+}
+
+input {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.productPage {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  justify-content: center;
+  padding: 1rem;
+  background-color: hsla(337, 81%, 50%, 0.76);
+}
+
+.products-image {
+  width: 5rem;
+  height: 7rem;
+}
+
+.productCard1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.productCard:nth-child(1n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(2n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(3n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(4n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(5n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(6n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(7n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(8n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(9n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(10n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(11n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(12n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(13n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(14n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(15n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(16n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(17n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productCard:nth-child(18n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(19n) {
+  background-color: rgb(248, 79, 144);
+}
+
+.productCard:nth-child(20n) {
+  background-color: rgb(210, 67, 121);
+}
+
+.productTitle {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.fowardArrowSect {
+  padding-right: 2rem;
+}
+
+.fowardArrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  color: white;
+}
